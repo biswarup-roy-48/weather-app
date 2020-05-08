@@ -26,7 +26,7 @@ window.addEventListener("load",()=>{
                     const {description}=data.weather[0];
                     temperatureDegree.textContent=Math.floor(temp-273);
                     temperatureDescription.textContent=description;
-                    locationTimezone.textContent=data.name+ ' ' +data.sys.country;
+                    locationTimezone.textContent=data.name+ ',' +data.sys.country;
                     iconElement.innerHTML=`<img src="icons/${data.weather[0].icon}.png">`;
 
 
